@@ -22,6 +22,10 @@ describe('Login Test', () =>
     cy.get("[type=submit]").click(); //click    
   })
 
+  it.skip('Skip method', () => { //it.skip - skip a test 
+    cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") //open url
+  })
+
 })
 // Another way to write describe function () => or function ()
 describe('Something', function () 
