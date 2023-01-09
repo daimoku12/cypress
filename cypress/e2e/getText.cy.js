@@ -20,4 +20,10 @@ describe("find text of an element", () => {
     it("Print Value - Uisng Variables ", function () {
         cy.log("====== Print Value - Using Variables ====== ", getText)
     })
+
+    it.only("Using Invoke Command ", function () {
+        cy.visit("https://www.linkedin.com/")
+        cy.get('[data-test-id="hero__headline"]').invoke('text').then(value => cy.log(value))
+        //cy.get('[data-test-id="hero__headline"]').invoke('text').then((value) => cy.log(value))
+    })
 })

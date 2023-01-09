@@ -10,9 +10,8 @@ describe('Assertions', () =>
     cy.get("img[alt='company-branding']").should('exist') //exist
     cy.xpath("//a").should('have.length', 5); //have.length
 
-    var length = cy.xpath("//a").its('length'); //its length
-    cy.log(length)
-
+    cy.xpath("//a").its('length').then((something) => cy.log("Length value is :" +something)) //get length
+   
     cy.url().should('include','orangehrmlive.com') //include
     cy.url().should('contain','orange') //contain
 
