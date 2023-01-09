@@ -14,7 +14,7 @@
 
 describe('Login Test', () => 
 {
-  it.only('Launch Browser', () => {  //it.only runs only that test  
+  it.only('Launch Browser', () => {  //it.only runs only that test
     cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") //open url
     cy.title().should('eq','OrangeHRM') //assertion
     cy.get("[type=submit]").contains("og") //matching text
