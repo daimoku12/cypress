@@ -1,4 +1,5 @@
-//Describe function is used to group tests
+//Describe - used to group tests
+//it/ specify - test name
 
 // --Cypress setup
 // npm -i intit //creates package.json
@@ -13,7 +14,7 @@
 
 describe('Login Test', () => 
 {
-  it('Launch Browser', () => {
+  it.only('Launch Browser', () => {  //it.only runs only that test
     cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") //open url
     cy.title().should('eq','OrangeHRM') //assertion
     cy.get("[type=submit]").contains("og") //matching text
@@ -22,7 +23,7 @@ describe('Login Test', () =>
     cy.get("[type=submit]").click(); //click    
   })
 
-  it.skip('Skip method', () => { //it.skip - skip a test 
+  specify.skip('Skip method', () => { //it.skip - skip a test 
     cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login") //open url
   })
 
