@@ -8,8 +8,8 @@
 //tag class - .class
 //tag attribute - [attribute='value']
 //tag class attribute
-
 //find - get descendent DOM element (parent:child)
+//*************cy.get('.smart-browse-input', {includeShadowDom:true}) - To work with element inside Shadow DOM**************
 
 describe('CSSLocators', () => 
 {

@@ -26,6 +26,8 @@
 
 /// <reference types="Cypress" />
 
+import 'cypress-file-upload';
+
 Cypress.Commands.add('getIframe', (iframe)=>{
      return cy.get(iframe)
     .its('0.contentDocument.body')
