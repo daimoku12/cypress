@@ -33,9 +33,4 @@ describe('handling tables', ()=>{
             })
           })
     })
-
-    it('pagination', () => {
-
-    
-    })
   })
