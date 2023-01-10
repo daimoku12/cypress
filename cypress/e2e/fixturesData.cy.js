@@ -14,7 +14,7 @@ describe('Fixtures', () => {
     cy.fixture('orangehrm').then((data)=>{
       cy.get("[name='username']").type(data.username)
       cy.get("[name='password']").type(data.password)
-      cy.get("[type=submit]").click();
+      cy.get("[type=submit]").click()
     })
   })
 
