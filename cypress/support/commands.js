@@ -35,6 +35,12 @@ Cypress.Commands.add('getIframe', (iframe)=>{
     .then(cy.wrap)
 })
 
+Cypress.Commands.add('setText', (element, value)=>{
+ cy.get(element).type(value);
+})
+
+
+
 
 
 
