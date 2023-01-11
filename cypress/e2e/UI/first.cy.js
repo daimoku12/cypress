@@ -1,3 +1,4 @@
+//Settings VSCode - ctrl+, (javascript.suggest.completeFunctionCalls)
 //https://www.toolsqa.com/cypress-tutorial/
 
 //Describe - used to group tests

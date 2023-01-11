@@ -19,7 +19,7 @@ describe('wrap', () =>
     })
   })
 
-  it.only('wrap variables/objects/arrays', () => {
+  it('wrap variables/objects/arrays', () => {
 
     let name = "QA Test Strategy"
     cy.wrap(name).should('eq', "QA Test Strategy")
