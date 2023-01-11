@@ -1,7 +1,9 @@
 //Settings VSCode - ctrl+, (javascript.suggest.completeFunctionCalls)
+//ctrl+, - Settings
+//ctrl+shift+x (extensions) - install es6 mocha snippets
 //https://www.toolsqa.com/cypress-tutorial/
 
-//Describe - used to group tests
+//Describe/ Context - used to group tests
 //it/ specify - test name
 
 // --Cypress setup
