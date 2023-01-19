@@ -1,6 +1,7 @@
 //npm install xlsx
+//Add task in cypress.config.js
 
-describe('Excel to JSON', () => 
+describe('cy task', () => 
 {
   it('excel to json', () => {
     const excelFilePath = "cypress\\e2e\\Misc\\Test.xlsx";
