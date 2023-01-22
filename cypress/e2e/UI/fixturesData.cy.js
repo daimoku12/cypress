@@ -1,6 +1,9 @@
+//const dataJson = require('../../fixtures/createuser') - Another way to use fixtures (tried in API Post)
+
 describe('Fixtures', () => {
   //Access through Hook - for multiple it blocks
   let userdata;
+
   before(()=>{
     cy.fixture('orangehrm').then((data)=>{
       userdata=data;
