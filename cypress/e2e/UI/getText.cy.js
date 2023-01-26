@@ -1,4 +1,4 @@
-let getText;  
+let getText;
 
 describe("find text of an element", () => {
 
