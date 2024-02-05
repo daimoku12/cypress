@@ -1,7 +1,7 @@
 describe('API tests', () => {
 
 
-    it('GET Request', () => {
+    it('GET Request ', () => {
         cy.request({
             method : 'GET',
             url : "https://gorest.co.in/public-api/users",

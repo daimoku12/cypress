@@ -1,6 +1,6 @@
 const payload = require('../../fixtures/createuser')
 
-describe('post user request', () => {
+describe('post user request ', () => {
 let accessToken = 'd9e1a7df360f6ea18c8c27c3be8122527103c740dfda2c6b3298cd7cab2aa544'
 let randomText = ""
 let testEmail = ""
@@ -32,6 +32,7 @@ let userId
                 expect(res.body.data).has.property('name',payload.name)
                 expect(res.body.data).has.property('status',payload.status)
                 expect(res.body.data).has.property('gender',payload.gender)
+                cy.log(res.body.data.id)
                 
                 userId = res.body.data.id 
                 cy.log("user id is: " + userId)
